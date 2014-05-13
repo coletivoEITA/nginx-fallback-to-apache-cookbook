@@ -2,12 +2,6 @@ nginx-fallback-to-apache Cookbook
 ========================
 Create a default site in Nginx that matches unhandled hosts and proxy them to Apache 
 
-Requirements
-------------
-Plataforms:
- - Debian
- - Ubuntu
-
 Attributes
 ----------
 #### nginx-fallback-to-apache::default
