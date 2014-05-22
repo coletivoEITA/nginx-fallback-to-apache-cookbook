@@ -46,3 +46,4 @@ Contributing
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
+After 3 consistent patches you become a commiter :)
