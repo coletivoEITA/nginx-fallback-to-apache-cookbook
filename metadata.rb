@@ -1,4 +1,4 @@
-name             'nginx-fallback-to-apache'
+name             'nginx_fallback_to_apache'
 maintainer       'Bráulio Bhavamitra'
 maintainer_email 'braulio@eita.org.br'
 license          'GPLv3+'

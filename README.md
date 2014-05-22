@@ -1,10 +1,10 @@
-nginx-fallback-to-apache Cookbook
+nginx\_fallback\_to\_apache Cookbook
 ========================
 Create a default site in Nginx that matches unhandled hosts and proxy them to Apache 
 
 Attributes
 ----------
-#### nginx-fallback-to-apache::default
+#### nginx\_fallback\_to\_apache::default
 <table>
   <tr>
     <th>Attribute</th>
@@ -12,27 +12,27 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>node['nginx-fallback-to-apache']['nginx_port']</tt></td>
+    <td><tt>node[:nginx_fallback_to_apache][:nginx_port]</tt></td>
     <td>The main port Nginx is listening</td>
-    <td><tt>node['nginx']['listen_ports'].first</tt></td>
+    <td><tt>node[:nginx][:listen_ports].first</tt></td>
   </tr>
   <tr>
-    <td><tt>node['nginx-fallback-to-apache']['apache_port']</tt></td>
+    <td><tt>node[:nginx_fallback_to_apache][:apache_port]</tt></td>
     <td>The main port Apache is listening</td>
-    <td><tt>node['apache']['listen_ports'].first</tt></td>
+    <td><tt>node[:apache][:listen_ports].first</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### nginx-fallback-to-apache::default
-Just include `nginx-fallback-to-apache` in your node's `run_list`:
+#### nginx\_fallback\_to\_apache::default
+Just include `nginx\_fallback\_to\_apache` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[nginx-fallback-to-apache]"
+    "recipe[nginx_fallback_to_apache]"
   ]
 }
 ```
