@@ -21,6 +21,21 @@ Attributes
     <td>The main port Apache is listening</td>
     <td><tt>node[:apache][:listen_ports].first</tt></td>
   </tr>
+  <tr>
+    <td><tt>node[:nginx_fallback_to_apache][:ssl]</tt></td>
+    <td>Wheter to listen to SSL</td>
+    <td><tt>false</tt></td>
+  </tr>
+  <tr>
+    <td><tt>node[:nginx_fallback_to_apache][:server_config]</tt></td>
+    <td>Additional server{} configuration in hash format</td>
+    <td><tt>{}</tt></td>
+  </tr>
+  <tr>
+    <td><tt>node[:nginx_fallback_to_apache][:location_config]</tt></td>
+    <td>Additional location{} configuration in hash format</td>
+    <td><tt>{}</tt></td>
+  </tr>
 </table>
 
 Usage
