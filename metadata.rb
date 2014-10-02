@@ -1,5 +1,5 @@
 name             'nginx_fallback_to_apache'
-maintainer       'Bráulio Bhavamitra'
+maintainer       'Braulio Bhavamitra'
 maintainer_email 'braulio@eita.org.br'
 license          'GPLv3+'
 description      'Create a default site in Nginx that matches unhandled hosts and proxy them to Apache'
